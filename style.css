@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav i {
+    color: #000000dd;
+    cursor: pointer;
+
+    &:hover {
+        color: blue;
+    }
+}
+
+.investment {
+    border-bottom: 4px solid #0000001c;
+    padding-bottom: 10px;
+
+    &>div>div {
+        height: 100px;
+        width: 100px;
+    }
+
+    .icons {
+        height: 80px;
+        width: 80px
+    }
+}
+
+.bottom {
+    padding-top: 20px;
+    border-top: 3px solid #0000001c;
+    box-shadow: 0px -5px 20px #00000037;
+}
+
+.courses-img {
+    border-radius: 5px;
+    height: 200px;
+    width: 100%;
+}
+
+.dot-icon {
+    font-size: 5px;
+    position: relative;
+    top: 8px;
+    margin: 0 4px;
+
+}
+
+.profiles {
+    display: flex;
+
+    img,
+    p {
+        margin-left: -5px;
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+    }
+
+    p {
+        background-color: rgb(120, 232, 212);
+        /* border-radius: 50%;
+        height: 15px;
+        width: 15px; */
+        font-size: 8px;
+        text-align: center;
+        color: blue;
+        padding-top: 1px;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .nifty h5 {
+        font-size: smaller;
+    }
+
+    .investment {
+        .icons {
+            height: 50px;
+            width: 50px
+        }
+
+        p {
+            font-size: smaller;
+        }
+    }
+
+    .bottom {
+
+        i {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: small;
+        }
+
+    }
+
+    .ads h3 {
+        font-size: smaller;
+        line-height: 1rem;
+    }
+}
